@@ -76,5 +76,47 @@ console.log("Original:", original);   // [1, 2, 3, 4, 5, 6] (intacto)
 console.log("Resultado:", resultado); // [2, 3, 4, 5]
 //* respuesta d: Slice(), no modifica el original
 
+//! 3 Objetos y cómo acceder a las propiedades 
+//*a
+let libro = {
+    titulo: "El principito",
+    autor: "Antoine de Saint-Exupéry",
+    año: 1943
+}
+//console.log(libro);
+console.log(libro.titulo);
+console.log(libro.autor);
+console.log(libro.año);
+
+//*b
+//añadir nueva propiedad
+persona.hobby = "cocinar";
+
+// Modificar propiedad existente
+persona.edad = 21;
+console.log(persona);
 
 
+//*c
+
+let calculadora = {
+    sumar: (a, b) => a + b,
+    restar: (a, b) => a - b,
+    multiplicar: (a, b) => a * b,
+    dividir: (a, b) => b !== 0 ? a / b : "Error: División por cero"
+};
+
+console.log("Suma:", calculadora.sumar(10, 5));
+console.log("Resta:", calculadora.restar(10, 5));
+console.log("Multiplicación:", calculadora.multiplicar(10, 5));
+console.log("División:", calculadora.dividir(10, 2));
+
+//*d
+let perro = {
+    raza: "Salchicha",
+    color:"marron",
+    edad: 1
+}
+let propiedadAAceder = "raza"
+
+console.log(perro[propiedadAAceder]);
