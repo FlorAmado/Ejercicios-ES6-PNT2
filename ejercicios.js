@@ -1,9 +1,9 @@
 //! 1 let y const
-let edad = 20
-const nombre = "Florencia"
+//let edad = 20
+//const nombre = "Florencia"
 //nombre = "Rocio"
-edad = 2
-console.log(nombre,edad);
+//edad = 2
+//console.log(nombre,edad);
 
 //*respuesta a:
 //si quiero cambiar el valor de una constante tira error: TypeError: Assignment to constant variable.
@@ -120,3 +120,32 @@ let perro = {
 let propiedadAAceder = "raza"
 
 console.log(perro[propiedadAAceder]);
+
+//4 Template Literals
+
+//*a
+let nombre = "Florencia Amado";
+let edad = 20;
+let profesion = "Desarrolladora Web";
+
+let presentacion = `Hola, mi nombre es ${nombre}, tengo ${edad} años y soy ${profesion}.`;
+
+console.log(presentacion);
+
+//*b
+
+let calcularTotal = (precio, cantidad) => {
+    return `El total es: ${precio * cantidad}`;
+};
+
+console.log(calcularTotal(500, 3));
+
+//*c
+
+let errorNombre = "404 Not Found";
+let errorDescripcion = "La página que buscas no existe";
+
+let mensajeDeError = `[ERROR]: Se ha producido un ${errorNombre}. Detalles: ${errorDescripcion}`;
+
+console.log(mensajeDeError);
+
